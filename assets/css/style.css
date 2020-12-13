@@ -1,13 +1,69 @@
 @import url('https://fonts.googleapis.com/css2?family=Assistant:wght@500&family=Balsamiq+Sans:wght@400;700&display=swap');
 
+*{
+    margin-left: 0;
+    padding: 0;
+    border: 0;
+}
+
 body {
     font-family: Assistant;
     color: black;
-    padding: 0;
-    margin: 0;
+    background-image: url("../images/Background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-bottom: 5rem;
+    min-height: 100vh;
+}
+
+#main-logo, #main-menu {
+    padding: 10px;
     display: flex;
-    width:100vw;
-    height:100vh;
     justify-content: center;
     align-items: center;
-    }
+    font-size: larger;
+}
+
+li{
+    padding: 10px;
+}
+
+
+.container {
+    margin-top:5%;
+    margin-left: 23%;
+    width: 800px;
+    max-width: 80%;
+    background-color: grey;
+    border-radius:5px;
+    padding: 10px;
+    text-align: center; 
+}
+#hint {
+    margin-top: 20px;
+    margin-left: 23%;
+    width: 800px;
+    max-width: 80%;
+    background-color: grey;
+    border-radius:5px;
+    padding: 10px;
+    text-align: center; 
+}
+
+.btn-grid {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    gap: 20px;
+    margin: 20px 0;
+}
+.btn {
+    background-color: white;    
+}
+.btn:hover {
+    background-color: whitesmoke;
+}
+footer{
+    height: 20px;
+    margin-top: 50px;
+    text-align: center;
+}
