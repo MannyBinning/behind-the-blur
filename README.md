@@ -3,8 +3,6 @@
 
 # UX
 
-### **Home Page:**
-
 ### **Celebrity Quiz Page:**
 
 ### **Car Quiz Page:**
