@@ -31,6 +31,7 @@ li{
     margin: 10px;
     
 }
+
 .home-container {
     display: flex;
     justify-content: center;
@@ -87,6 +88,17 @@ h1 {
 .btn:hover {
     background-color:rgb(168, 168, 168);
 }
+
+.btn.correct {
+    background-color: green;
+    border: solid white;
+}
+.btn.wrong {
+    background-color: rgb(194, 2, 2);
+    border: solid white;
+}
+
+
 footer{
     height: 20px;
     margin-top: 50px;
