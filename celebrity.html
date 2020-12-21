@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" type="text/css"/>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css" />
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <link rel="stylesheet" href="assets/css/style.css">
     <title>Behind The Blur</title>
 </head>
@@ -37,20 +38,26 @@
     </header>
     
     <section>
-        <div class="container">
-            <div id="image.container"></div>
-                <div id="question">Question</div>
-                <div id="answers" class="btn-grid">
-                    <button class="btn" data-number="1">Answer1</button>
-                    <button class="btn" data-number="2">Answer2</button>
-                    <button class="btn" data-number="3">Answer3</button>
-                    <button class="btn" data-number="4">Answer4</button>
-                </div>
-                <div id="hint">
-                    <button class="btn">Hints</button>     
-                </div>
-        </div>    
-        <div class="score-container">
+  <div class="container">
+    <div id="question-container" class="hide">
+      <div id="question">Question</div>
+      <div id="answer" class="btn-grid">
+        <button class="btn">Option 1</button>
+        <button class="btn">Option 2</button>
+        <button class="btn">Option 3</button>
+        <button class="btn">Option 4</button>
+      </div>
+      <div id="hint">
+        <button id= "hint-btn" class="btn">Hints</button>     
+        <h6>this is a hint</h6>
+      </div> 
+    </div>
+    <div class="controls">
+      <button id="play-btn" class="play-btn btn">Play</button>
+      <button id="next-btn" class="next-btn btn hide">Next</button>
+    </div>
+  </div>
+          <div class="score-container">
             <h2 id="score"> 0 </h2>
         </div>
         <div class="score-container">
@@ -61,6 +68,7 @@
     <footer>
         copyright
     </footer>
+    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
     <script src="script.js"></script>
 
 </body>

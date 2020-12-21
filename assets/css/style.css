@@ -41,10 +41,10 @@ li{
     text-align: center; 
 }  
 .btn-primary.custom-btn {
-	background-color: grey;
-	border-color:black;
+    background-color: grey;
+    border-color:black;
 }
-h1 {
+h1, h3 {
     border: solid grey;
     border-radius: 5px;
     padding: 10px;
@@ -65,8 +65,15 @@ h1 {
     padding: 10px;
     text-align: center; 
 }
+.start-btn {
+    font-size: xx-large;
+    padding: 10px 20px;
+    
+}
+
 #hint {
     margin-top: 50px;
+    margin-bottom: 20px;
     }
 .score-container {
     display: flex;
@@ -98,9 +105,16 @@ h1 {
     border: solid white;
 }
 
+.hide {
+    display: none;
+}
 
 footer{
     height: 20px;
     margin-top: 50px;
     text-align: center;
 }
+
+
+
+
