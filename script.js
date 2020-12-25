@@ -43,9 +43,7 @@
             ]
         },
     ]
-
-    const SCORE_POINTS = 100
-    const MAX_QUESTIONS = 4
+    let countRightAnswers = 0;
 
     play.addEventListener('click', startGame)
     nextQuestion.addEventListener('click', function() {
@@ -59,6 +57,7 @@
         shuffledQuestions = questions.sort(() => Math.random() - .5)
         currentQuestion = 0
         questionContainer.classList.remove('hide')
+        countRightAnswers = 0; 
         setNextQuestion()
         }
 
@@ -103,6 +102,10 @@
                 play.innerText = 'Restart'
                 play.classList.remove('hide')
                 }
+        if (selectedButton.dataset = correct) {
+            countRightAnswers++;
+         }
+         document.getElementById('right-answers').innerHTML = countRightAnswers;
         }
 
     function setStatusClass(element, correct) {
