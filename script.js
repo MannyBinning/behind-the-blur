@@ -1,5 +1,6 @@
     const play = document.querySelector('#play-btn')
     const nextQuestion = document.querySelector('#next-btn')
+    const imageAsked = document.querySelector('#image')
     const hintAsked = document.querySelector ('#hint')
     const questionContainer = document.querySelector('#question-container')
     const questionAsked = document.querySelector('#question')
@@ -8,7 +9,6 @@
     const questions = [
         {
             question: 'Whos is this Hollywood Actor, made his acting debut in 1990?',
-            hint: 'find solution',
             answers: [
                 {text: 'Will Smith', correct: true},
                 {text: 'Denzel Washington', correct: false},
@@ -19,7 +19,6 @@
         },
         {
             question: 'Which RnB artist left acting to persue career in singing?',
-            hint: 'find solution',
             answers: [
                 {text: 'Eminem', correct: false},
                 {text: 'Chris Brown', correct: false},
@@ -34,8 +33,7 @@
                 {text: 'Chelsea', correct: false},
                 {text: 'Liverpool', correct: true},
                 {text: 'Arsenal', correct: false}
-            ],
-            hint: 'solution'
+            ]
         },
         {
             question: 'Whos is this talented cricketer, to lead Indian Cricket in all three formats of the game? ',
@@ -44,8 +42,7 @@
                 {text: 'Vikram Solanki', correct: false},
                 {text: 'Hashim Amla', correct: false},
                 {text: 'Rohit Sharma', correct: false}
-            ],
-            hint: 'solution'
+            ]
         },
     ]
   
@@ -59,7 +56,7 @@
 
     $(document).ready(function () {
     $('#show_hint').click(function () {
-        $('#hint').toggle();
+        $('#question').toggle();
         });
     });
     
