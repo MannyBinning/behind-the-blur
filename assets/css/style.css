@@ -71,10 +71,14 @@ h1, h3 {
     
 }
 
-#hint {
+#hint-container {
     margin-top: 50px;
     margin-bottom: 20px;
     }
+#hint {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
 .score-container {
     display: flex;
     justify-content: center;
@@ -107,6 +111,11 @@ h1, h3 {
 
 .hide {
     display: none;
+}
+.hint-shown {
+    border: solid whitesmoke;
+    color: whitesmoke;
+    
 }
 
 footer{
