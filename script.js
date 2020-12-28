@@ -87,7 +87,7 @@
             button.addEventListener('click', selectAnswer)
             answerButtons.appendChild(button)
             })
-            hintAsked.innerText = hint.text
+            
         }
 
     function resetState() {
@@ -109,7 +109,8 @@
             nextQuestion.classList.remove('hide')
             }   
             else {
-                play.innerText = 'Restart'
+                localStorage.setItem('mostRecentScore', countRightAnswers)
+                return window.location.assign('/points.html'),
                 play.classList.remove('hide')
                 }
         if (selectedButton.dataset = correct) {
@@ -133,6 +134,8 @@
         element.classList.remove('correct')
         element.classList.remove('wrong')
         }
+
+     
 
  
 
