@@ -1,4 +1,4 @@
-    const play = document.querySelector('#play-btn')
+    
     const nextQuestion = document.querySelector('#next-btn')
     const imageAsked = document.querySelector('#image')
     const hintAsked = document.querySelector ('#hint')
@@ -48,7 +48,7 @@
   
     let countRightAnswers = 0;
 
-    play.addEventListener('click', startGame)
+    window.addEventListener('load', startGame)
     nextQuestion.addEventListener('click', function() {
         currentQuestion++
         setNextQuestion()
@@ -62,7 +62,7 @@
     
 
     function startGame() {
-        play.classList.add('hide')
+        
         shuffledQuestions = questions.sort(() => Math.random() - .5)
         currentQuestion = 0
         questionContainer.classList.remove('hide')
@@ -110,8 +110,8 @@
             }   
             else {
                 localStorage.setItem('points', 'right-answers')
-                return window.location.assign('/points.html'),
-                play.classList.remove('hide')
+                return window.location.assign('/points.html')
+                
                 }
         if (selectedButton.dataset = correct) {
             countRightAnswers++;
