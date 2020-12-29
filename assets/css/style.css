@@ -16,6 +16,7 @@ body {
     min-height: 100vh;
 }
 
+/*Main Logo and menu style*/
 #main-logo, #main-menu {
     padding: 10px;
     display: flex;
@@ -31,7 +32,7 @@ li{
     margin: 10px;
     
 }
-
+/*Container with all main body elements*/
 .home-container {
     display: flex;
     justify-content: center;
@@ -40,24 +41,27 @@ li{
     padding: 50px;
     text-align: center; 
 }  
+
 .btn-primary.custom-btn {
     background-color: grey;
     border-color:black;
    
 }
+
 h1, h3 {
     border: solid grey;
     border-radius: 5px;
     padding: 10px;
     color: rgb(235, 235, 235);
 }
-
+/*buttons for answers in the quiz*/
 #options {
     display: grid;
     grid-template-columns: repeat(1, auto);
     gap: 20px;
     margin: 20px 0;
 }
+/*style for container on the celebrity page*/
 .container {
     margin-top:10px;
     width: 800px;
@@ -67,20 +71,19 @@ h1, h3 {
     padding: 10px;
     text-align: center; 
 }
-.start-btn {
-    font-size: xx-large;
-    padding: 10px 20px;
-    
-}
 
+/*hint container*/
 #hint-container {
     margin-top: 50px;
     margin-bottom: 20px;
     }
+   
 #hint {
     margin-top: 20px;
     margin-bottom: 20px;
 }
+
+/*Score Container for the points when right answer selected*/
 .score-container {
     display: flex;
     justify-content: center;
@@ -102,10 +105,12 @@ h1, h3 {
     background-color:rgb(168, 168, 168);
 }
 
+/*btn for when the correct answer selected */
 .btn.correct {
     background-color: green;
     border: solid white;
 }
+/*btn for when the wrong answer selected */
 .btn.wrong {
     background-color: rgb(194, 2, 2);
     border: solid white;
@@ -119,11 +124,12 @@ h1, h3 {
     color: whitesmoke;
     
 }
-
+/*Return button to restart the quiz once finished*/
 .return-btn {
     margin-top: 20px;
 }
 
+/*POINTS PAGE - once quiz is finished */
 input {
     margin-top: 10px;
     margin-bottom: 10px;
