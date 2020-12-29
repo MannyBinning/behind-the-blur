@@ -43,6 +43,7 @@ li{
 .btn-primary.custom-btn {
     background-color: grey;
     border-color:black;
+   
 }
 h1, h3 {
     border: solid grey;
@@ -50,6 +51,7 @@ h1, h3 {
     padding: 10px;
     color: rgb(235, 235, 235);
 }
+
 #options {
     display: grid;
     grid-template-columns: repeat(1, auto);
@@ -118,7 +120,28 @@ h1, h3 {
     
 }
 
+.return-btn {
+    margin-top: 20px;
+}
 
+input {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 100%;
+    padding: 5px;
+    font-size: 25px;
+    border: none;
+    text-align: center;
+}
 
+input::placeholder {
+    color: #aaa;
+    
+}
 
+#player {
+    margin-bottom: 3rem;
+    width: 100%;
+    outline: none;
+}
 

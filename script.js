@@ -109,7 +109,7 @@
             nextQuestion.classList.remove('hide')
             }   
             else {
-                localStorage.setItem('mostRecentScore', countRightAnswers)
+                localStorage.setItem('points', 'right-answers')
                 return window.location.assign('/points.html'),
                 play.classList.remove('hide')
                 }

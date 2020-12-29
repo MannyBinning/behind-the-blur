@@ -18,17 +18,19 @@
     
     <section>
         <div class="home-container">
-            <div id="end">
-                <h6 id="finalScore">0</h6>
-                <form>
-                    <h2>Enter Name</h2>
-                    <input type="text" name="name" id="username" placeholder="Enter Name">
-                    <button class="btn" type="submit" >Save</button>
-                </form>
-            <a href="celebrity.html" class="btn">Play Again</a>
-            <a href="index.html" class="btn">Home  <i class="fas fa-home"></i></a>
+        <div>
+            <h1 id="points-scored">0</h1>
+            <form class="end-form-container">
+                <input type="text" name="name" id="player" placeholder="Enter your name">
+                <button class="btn" id="saveScoreBtn" type="submit" onclick="saveHighScore(event)">Save</button>
+            </form>
+            <div id="options">
+                <a href="celebrity.html" class="btn btn-primary custom-btn" role="button">Restart   <i class="fas fa-undo"></i></a>
+                <a href="index.html" class="btn btn-primary custom-btn" role="button"> Home   <i class="fas fa-home"></i></a>
+            </div>
+        </div>
         </div>   
-        </div> 
+        
     </section>
 
     <footer>
