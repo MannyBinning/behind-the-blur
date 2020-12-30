@@ -126,6 +126,8 @@ h1, h3 {
     background-color: rgb(194, 2, 2);
     border: solid white;
 }
+/*to stop the points repeating after every click*/
+.disable {pointer-events: none;}
 
 .hide {
     display: none;
@@ -161,4 +163,5 @@ input::placeholder {
     width: 100%;
     outline: none;
 }
+
 

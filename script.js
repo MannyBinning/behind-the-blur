@@ -81,6 +81,7 @@
     function setNextQuestion() {
         resetState()
         showQuestion(shuffledQuestions[currentQuestion])
+        
         }
     
     function showQuestion(question) {
@@ -97,6 +98,8 @@
             button.addEventListener('click', selectAnswer)
             answerButtons.appendChild(button)
             })
+        answerButtons.classList.remove('disable')
+        
             
         }
 
@@ -117,6 +120,7 @@
             })
         if (shuffledQuestions.length > currentQuestion + 1) {
             nextQuestion.classList.remove('hide')
+            
             }   
             else {
                     finishGame.classList.remove('hide')
@@ -124,6 +128,7 @@
                 }
         if (selectedButton.dataset = correct) {
             countRightAnswers++;
+            answerButtons.classList.add('disable')
          }
          document.getElementById('right-answers').innerHTML = (100 * countRightAnswers);
         }
