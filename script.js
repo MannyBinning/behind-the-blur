@@ -3,6 +3,7 @@
     const questionContainer = document.querySelector('#question-container')
     const questionAsked = document.querySelector('#question')
     const answerButtons = document.querySelector('#answer')
+    const finishGame = document.querySelector('#finish-btn')
 
     var questions = [
         {
@@ -118,8 +119,7 @@
             nextQuestion.classList.remove('hide')
             }   
             else {
-                localStorage.setItem('points', 'right-answers')
-                return window.location.assign('/points.html')
+                    finishGame.classList.remove('hide')
                 
                 }
         if (selectedButton.dataset = correct) {
@@ -140,8 +140,6 @@
                 }
 
         }
-    
-
     function clearStatusClass(chosen) {
         chosen.classList.remove('correct')
         chosen.classList.remove('wrong')
