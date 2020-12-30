@@ -41,7 +41,11 @@ li{
     padding: 50px;
     text-align: center; 
 }  
-
+#question {
+    color: whitesmoke;
+    font-size: large;
+    margin: 10px;
+}
 .btn-primary.custom-btn {
     background-color: grey;
     border-color:black;
@@ -53,6 +57,13 @@ h1, h3 {
     border-radius: 5px;
     padding: 10px;
     color: rgb(235, 235, 235);
+}
+/*image blur in question*/
+.main-image{
+    filter: blur(30px);
+}
+#main-image {
+    margin-top: 20px;
 }
 /*buttons for answers in the quiz*/
 #options {
