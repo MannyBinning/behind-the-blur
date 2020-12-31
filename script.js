@@ -86,7 +86,7 @@
     
     function showQuestion(question) {
         questionAsked.innerText = question.question
-        questionAsked.innerHTML += `<img id="main-image" class="main-image" src="${question.image}" width="500" height="300" alt="image">`
+        questionAsked.innerHTML += `<img id="main-image" class="main-image" src="${question.image}" width="50%" height="50%" alt="image">`
         hintAsked.innerText = question.hint
         question.answers.forEach(answer => {
             const button = document.createElement('button')
@@ -124,13 +124,13 @@
             }   
             else {
                     finishGame.classList.remove('hide')
-                
                 }
         if (selectedButton.dataset = correct) {
             countRightAnswers++;
             answerButtons.classList.add('disable')
          }
-         document.getElementById('right-answers').innerHTML = (100 * countRightAnswers);
+         document.getElementById('rightanswers').innerHTML = (100 * countRightAnswers);
+         localStorage.setItem('finalScore', JSON.stringify(rightanswers))
         }
 
     function setStatusClass(chosen, correct) {
@@ -150,8 +150,5 @@
         chosen.classList.remove('wrong')
         }
 
-     
-
- 
 
 

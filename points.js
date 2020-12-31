@@ -1,12 +1,8 @@
-  
-const playerName = document.querySelector('#player')
-const saveScoreBtn = document.querySelector('#saveScoreBtn')
-const totalPoints = document.querySelector('#points-scored')
-const mostRecentScore = localStorage.getItem('points')
-
-const highScores = JSON.parse(localStorage.getItem('points')) || []
+const finalScore = document.querySelector('#points-scored')
+const mostRecentScore = localStorage.getItem('finalScore')
+const player = document.querySelector('#player')
+const savePoints = document.querySelector('#savePoints')
 
 
-
-totalPoints.innerText = mostRecentScore
+finalScore.innerText = mostRecentScore;
 
