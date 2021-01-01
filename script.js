@@ -5,9 +5,10 @@
     const answerButtons = document.querySelector('#answer')
     const finishGame = document.querySelector('#finish-btn')
 
+    // All the question for the quiz including images, answer and hints. 
     var questions = [
         {
-            question: 'Whos is this Hollywood Actor, made his acting debut in 1990?',
+            question: 'Whos is this Hollywood Actor, made his acting debut in 1990?', 
             image: 'https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.XNcJSDv16IdBGeucts-lEQHaE8%26pid%3DApi&f=1',
             hint: 'He is the first hip-hop star to be nominated for an Oscar for his performances in The Pursuit of Happyness.',
             answers: [
@@ -52,16 +53,20 @@
             ]
         },
     ]
-  
+    //to count the right answers for points 
+
     let countRightAnswers = 0;
 
+    //eventListner to start the game when page loads
     window.addEventListener('load', startGame)
+
+    //eventListner to set the next question
     nextQuestion.addEventListener('click', function() {
         currentQuestion++
         setNextQuestion()
         })
-
-        
+    
+    //funtion to show the hint for three seconds when hint button clicked found via -  https://www.w3schools.com/howto/howto_js_toggle_hide_show.asp  
     $(document).ready(function () {
     $('#show_hint').click(function () {
         $('#hint').show();
@@ -69,22 +74,21 @@
         });
     });
     
-
+    //function to start the game included with shuffled questions 
     function startGame() {
-        
         shuffledQuestions = questions.sort(() => Math.random() - .5)
         currentQuestion = 0
         questionContainer.classList.remove('hide')
         countRightAnswers = 0; 
         setNextQuestion()
         }
- 
+    
     function setNextQuestion() {
         resetState()
         showQuestion(shuffledQuestions[currentQuestion])
            
         }
-    
+    //function to show the questions/answer/images/hints in the right container
     function showQuestion(question) {
         questionAsked.innerText = question.question
         questionAsked.innerHTML += `<img id="main-image" class="main-image" src="${question.image}" width="100%" height="70%" alt="image">`
@@ -99,12 +103,9 @@
             button.addEventListener('click', selectAnswer)
             answerButtons.appendChild(button)
             })
-        answerButtons.classList.remove('disable')
-        
-        
-            
+            answerButtons.classList.remove('disable')            
         }
-
+    
     function resetState() {
         clearStatusClass(document.body)
         nextQuestion.classList.add('hide')
@@ -112,7 +113,7 @@
             answerButtons.removeChild(answerButtons.firstChild)
             }
         }
-
+    //function to detemrine what happens when the answers are selected 
     function selectAnswer(e) {
         const selectedButton = e.target
         const correct = selectedButton.dataset.correct
@@ -126,15 +127,16 @@
             }   
             else {
                     finishGame.classList.remove('hide')
+                    localStorage.setItem('finalScore', rightanswers);
                 }
         if (selectedButton.dataset = correct) {
             countRightAnswers++;
             answerButtons.classList.add('disable')
          }
          document.getElementById('rightanswers').innerHTML = (100 * countRightAnswers);
-         localStorage.setItem('finalScore', JSON.stringify(rightanswers))
+         
         }
-
+    // function to take the blur off the image when answer selected and to show if the answer selected was right or wrong
     function setStatusClass(chosen, correct) {
         clearStatusClass(chosen)
         var element = document.getElementById("main-image");
@@ -145,8 +147,8 @@
             else {
                 chosen.classList.add('wrong')
                 }
-
         }
+    //when the new question shown the answer buttons gone back to original
     function clearStatusClass(chosen) {
         chosen.classList.remove('correct')
         chosen.classList.remove('wrong')

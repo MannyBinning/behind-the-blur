@@ -63,7 +63,7 @@ h1, h3 {
     filter: blur(30px);
 }
 #main-image {
-    padding: 75px;
+    padding: 50px;
     margin-top: -45px;
     margin-bottom: -25px;
 }
@@ -154,12 +154,12 @@ input {
     border: none;
     text-align: center;
 }
-
+/*place holder text*/
 input::placeholder {
-    color: #aaa;
+    color: grey;
     
 }
-
+/*inout box for playen name*/
 #player {
     margin-bottom: 3rem;
     width: 100%;

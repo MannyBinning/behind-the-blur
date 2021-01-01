@@ -13,36 +13,34 @@
 </head>
 <body>
     <header>
+    <!--Main Logo-->    
         <div id="main-logo">
         <a class="navbar-brand " href="index.html"><img src="assets/images/Logo.jpg" alt="logo"></a>
         </div>
     </header>
-    
     <section>
+    <!--Container to hold all the conent on the page-->
         <div class="home-container">
-        <div>
-            <h1 id="points-scored">0</h1>
-            <form class="end-form-container">
-                <input type="text" name="name" id="player" placeholder="Enter your name">
-                <button class="btn" id="saveScoreBtn" type="submit" onclick="saveHighScore(event)">Save</button>
-            </form>
-            <div id="options">
-                <a href="celebrity.html" class="btn btn-primary custom-btn" role="button">Restart   <i class="fas fa-undo"></i></a>
-                <a href="index.html" class="btn btn-primary custom-btn" role="button"> Home   <i class="fas fa-home"></i></a>
+            <div>
+    <!--points to be shown-->
+                <h1 id="points-scored"></h1>
+    <!--form to save the final score with a save button-->
+                <form class="form-container">
+                    <input type="text" name="name" id="player" placeholder="Enter your name">
+                    <button class="btn" id="saveScoreBtn" type="submit" onclick="saveHighScore(event)">Save</button>
+                </form>
+    <!--Links to navigate back to where the user wants-->
+                <div id="options">
+                    <a href="celebrity.html" class="btn btn-primary custom-btn" role="button">Restart   <i class="fas fa-undo"></i></a>
+                    <a href="index.html" class="btn btn-primary custom-btn" role="button"> Home   <i class="fas fa-home"></i></a>
+                </div>
             </div>
-        </div>
         </div>   
-        
     </section>
-
-    <footer>
-        copyright
-    </footer>
     <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script> 
     <script src="points.js"></script>
-
 </body>
 </html>

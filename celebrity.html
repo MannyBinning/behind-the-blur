@@ -37,42 +37,39 @@
         </nav>
         </div>
     </header>
-    
     <section>
-  <div class="container">
-    <div id="question-container">
-        <div id="question">Question</div>
-        <div id="answer" class="btn-grid">
-            <button class="btn">Option 1</button>
-            <button class="btn">Option 2</button>
-            <button class="btn">Option 3</button>
-            <button class="btn">Option 4</button>
-        </div>
-        <div id="hint-container">
-            <button id= "show_hint" class="btn">Hints</button>
-            <p id="hint" class="hide  hint-shown">Hint Shown</p>
-        </div> 
-        <button id="next-btn" class="next-btn btn hide">Next</button>
-        <button><a href="points.html" class="btn hide" id="finish-btn">Final Score</a></button>
-        <div class="score-container">
-            <h2 id="rightanswers"> 0 </h2>
-        </div>
-        <div class="score-container">
-            <p>Points</p>
-        </div>
-
-        </div>
-    <div>
-      
-      
-    </div>
-  </div>
-              
+    <!--Container made to hold the content of the site-->
+        <div class="container">
+            <div id="question-container">
+    <!--Main Question div holding the question and the image-->
+                <div id="question">Question</div>
+    <!--buttons to select answers-->
+                <div id="answer" class="btn-grid">
+                    <button class="btn">Option 1</button>
+                    <button class="btn">Option 2</button>
+                    <button class="btn">Option 3</button>
+                    <button class="btn">Option 4</button>
+                </div>
+    <!--Container holding Hints button-->
+                <div id="hint-container">
+                    <button id= "show_hint" class="btn">Hints</button>
+    <!--Hint text only shown for 3 seconds when hint button clicked-->
+                    <p id="hint" class="hide  hint-shown">Hint Shown</p>
+                </div> 
+    <!--Next button to navigate onto next question-->
+                    <button id="next-btn" class="next-btn btn hide">Next </button>
+    <!--Final Score button to navigate onto points page-->
+                    <button><a href="points.html" class="btn hide" id="finish-btn">Final Score</a></button>
+    <!--container to keep track of the points scored-->
+                <div class="score-container">
+                    <h2 id="rightanswers"> 0 </h2>
+                </div>
+                <div class="score-container">
+                    <p>Points</p>
+                </div>
+            </div>
+      </div>            
     </section>
-
-    <footer>
-        copyright
-    </footer>
     <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
