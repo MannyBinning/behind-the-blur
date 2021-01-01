@@ -64,7 +64,8 @@
         
     $(document).ready(function () {
     $('#show_hint').click(function () {
-        $('#hint').toggle();
+        $('#hint').show();
+        setTimeout(function() { $("#hint"). hide(); }, 3000)
         });
     });
     
@@ -81,12 +82,12 @@
     function setNextQuestion() {
         resetState()
         showQuestion(shuffledQuestions[currentQuestion])
-        
+           
         }
     
     function showQuestion(question) {
         questionAsked.innerText = question.question
-        questionAsked.innerHTML += `<img id="main-image" class="main-image" src="${question.image}" width="95%" height="70%" alt="image">`
+        questionAsked.innerHTML += `<img id="main-image" class="main-image" src="${question.image}" width="100%" height="70%" alt="image">`
         hintAsked.innerText = question.hint
         question.answers.forEach(answer => {
             const button = document.createElement('button')
@@ -99,6 +100,7 @@
             answerButtons.appendChild(button)
             })
         answerButtons.classList.remove('disable')
+        
         
             
         }

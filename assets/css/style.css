@@ -38,7 +38,7 @@ li{
     justify-content: center;
     background-color: transparent;
     border-radius:5px;
-    padding: 200px;
+    padding: 50px;
     text-align: center; 
 }  
 #question {
@@ -63,7 +63,9 @@ h1, h3 {
     filter: blur(30px);
 }
 #main-image {
-    margin-top: 20px;
+    padding: 75px;
+    margin-top: -45px;
+    margin-bottom: -25px;
 }
 /*buttons for answers in the quiz*/
 #options {
