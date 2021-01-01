@@ -86,7 +86,7 @@
     
     function showQuestion(question) {
         questionAsked.innerText = question.question
-        questionAsked.innerHTML += `<img id="main-image" class="main-image" src="${question.image}" width="50%" height="50%" alt="image">`
+        questionAsked.innerHTML += `<img id="main-image" class="main-image" src="${question.image}" width="95%" height="70%" alt="image">`
         hintAsked.innerText = question.hint
         question.answers.forEach(answer => {
             const button = document.createElement('button')
