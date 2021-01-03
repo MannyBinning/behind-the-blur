@@ -161,9 +161,14 @@ input::placeholder {
 }
 /*inout box for playen name*/
 #player {
-    margin-bottom: 3rem;
+    margin-bottom: 50px;
     width: 100%;
     outline: none;
 }
 
+/*players list on High Score page*/
+.players {
+    font-size: larger;
+    list-style: none;
 
+}

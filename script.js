@@ -78,7 +78,6 @@
         currentQuestion = 0
         questionContainer.classList.remove('hide')
         countRightAnswers = 0; 
-        localStorage.clear();
         setNextQuestion()
         }
     
