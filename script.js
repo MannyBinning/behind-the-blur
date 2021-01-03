@@ -53,15 +53,13 @@
             ]
         },
     ]
-    //to count the right answers for points 
 
-    let countRightAnswers = 0;
 
     //eventListner to start the game when page loads
     window.addEventListener('load', startGame)
 
     //eventListner to set the next question
-    nextQuestion.addEventListener('click', function() {
+    nextQuestion.addEventListener('click', function(){
         currentQuestion++
         setNextQuestion()
         })
@@ -80,6 +78,7 @@
         currentQuestion = 0
         questionContainer.classList.remove('hide')
         countRightAnswers = 0; 
+        localStorage.clear();
         setNextQuestion()
         }
     
@@ -113,6 +112,10 @@
             answerButtons.removeChild(answerButtons.firstChild)
             }
         }
+    
+    //to count the right answers for points 
+    let countRightAnswers = 0;
+    
     //function to detemrine what happens when the answers are selected 
     function selectAnswer(e) {
         const selectedButton = e.target
@@ -127,13 +130,14 @@
             }   
             else {
                     finishGame.classList.remove('hide')
-                    localStorage.setItem('finalScore', rightanswers);
+                    
                 }
         if (selectedButton.dataset = correct) {
             countRightAnswers++;
             answerButtons.classList.add('disable')
          }
          document.getElementById('rightanswers').innerHTML = (100 * countRightAnswers);
+         localStorage.setItem('finalScore', JSON.stringify(100 * countRightAnswers));
          
         }
     // function to take the blur off the image when answer selected and to show if the answer selected was right or wrong
@@ -153,6 +157,4 @@
         chosen.classList.remove('correct')
         chosen.classList.remove('wrong')
         }
-
-
-
+    
