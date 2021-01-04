@@ -52,6 +52,17 @@
                 {text: 'Rohit Sharma', correct: false}
             ]
         },
+        {
+            question: 'Who is this American actor and filmmaker, starred in famous tv show aired from 1994 to 2004?',
+            image: 'https://media2.s-nbcnews.com/j/newscms/2020_07/3227271/200212-jennifer-aniston-cs-900a_2fc059d8fabde605846a7ee11d371854.social_share_1024x768_scale.jpg',
+            hint: "This actor is famous for her role as Rachel Green in the show and also has starred in movies such as 'We're the Millers'? ",
+            answers: [ 
+                {text: 'Britney Spears', correct: false},
+                {text: 'Scarlett Johansson', correct: false},
+                {text: 'Jennifer Aniston', correct: true},
+                {text: 'Margot Robbie', correct: false}
+            ]
+        },
     ]
 
 
