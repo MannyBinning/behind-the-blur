@@ -74,6 +74,9 @@
         currentQuestion++
         setNextQuestion()
         })
+    finishGame.addEventListener('click', function(){
+        window.location.assign('points.html')
+    })
     
     //funtion to show the hint for three seconds when hint button clicked found via -  https://www.w3schools.com/howto/howto_js_toggle_hide_show.asp  
     $(document).ready(function () {

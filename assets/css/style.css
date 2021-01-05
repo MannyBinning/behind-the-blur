@@ -10,8 +10,10 @@ body {
     font-family: Assistant;
     color: black;
     background-image: url("../images/Background.jpg");
-    background-repeat: no-repeat  center center fixed ;
+    background-repeat: no-repeat;
     background-size: cover; 
+    height: 100vh;
+    
 }
 
 /*Main Logo and menu style*/
@@ -175,3 +177,4 @@ input::placeholder {
     list-style: none;
 
 }
+
