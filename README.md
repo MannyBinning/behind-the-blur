@@ -1,3 +1,8 @@
+<p align="center">
+  <img src="assets/images/Logo.jpg" 
+alt="Logo"/>
+</p>
+
 
 # Description 
 - ‘Behind the blur’ is a virtual game, designed to quiz users on their awareness of vast general knowledge across the world. The questions within the game are related to well-known celebrities and established organisations within distinct sectors. <br>
@@ -11,9 +16,11 @@ Style of this site has been kept the same throughout every page of the game to k
 
 ### **Quiz Page:**
 - This page is where the users will be taken part in the quiz. For quality and consistency purposes, this page contains the same colour scheme as the other pages in the game and the game logo is visible and allocated in the same position throughout the game. 
+There is a question shown with a blurred image on this page. Four options are provided for the user to select the correct answer while giving a hint if needed. This page also contains points to keep track of correct answers throughout the quiz.
+- Once the quiz is over, site leads you onto 'Points Page'. Points page contains total points scored throughout this quiz with name input and finally a save button to save the score. 
 
 ### **High Score Page:**
-- The high score page has been created to help users oversee their scores and keep track of their achievements. This page format is aligned with all the other pages within the game. 
+- The high score page has been created to help users oversee their scores and keep track of their achievements. This page format is aligned with all the other pages within the game. This page contains a list of high scoring players including a button to lead them back to the home page. 
 
 # Wireframe
 - Wireframes were made at the start of the project to create a specific framework for this website. 
