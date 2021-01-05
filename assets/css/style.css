@@ -10,20 +10,23 @@ body {
     font-family: Assistant;
     color: black;
     background-image: url("../images/Background.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    padding-bottom: 5rem;
-    min-height: 100vh;
+    background-repeat: no-repeat  center center fixed ;
+    background-size: cover; 
 }
 
 /*Main Logo and menu style*/
 #main-logo, #main-menu {
-    padding: 10px;
+    
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: larger;
 }
+#main-logo {
+    margin-top: 10px;
+    margin-left: 20px;
+}
+
 
 li{
     color: white;
