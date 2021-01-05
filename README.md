@@ -20,22 +20,46 @@ Style of this site has been kept the same throughout every page of the game to k
 ### **Wireframe Screenshots:**
 <p align="center">
   <img src="assets/images/wireframe/Home.jpg" 
-alt="Home Page Wireframe"/>
+alt="Home Page Wireframe" width="80%" height="70%"/>
 </p>
 
 <p align="center">
   <img src="assets/images/wireframe/QuizPage.jpg" 
-alt="Quiz Page Wireframe"/>
+alt="Quiz Page Wireframe" width="80%" height="70%"/>
 </p>
 
 <p align="center">
   <img src="assets/images/wireframe/HighScore.jpg" 
-alt="High Score Page Wireframe"/>
+alt="High Score Page Wireframe" width="80%" height="70%"/>
 </p>
 
 #  Visual Identity
 
 # Site Overview
+Following Images are screenshots of the site overvire from a desktop: 
+<p align="center">Home Page </p>
+<p align="center">
+  <img src="assets/images/screenshots/Home.png" 
+alt="Home Page Screenshot" width="80%" height="70%"/>
+</p>
+
+<p align="center">Quiz Page </p>
+<p align="center">
+  <img src="assets/images/screenshots/Quiz.png" 
+alt="Quiz Page Screenshot" width="80%" height="70%">
+</p>
+
+<p align="center">Points Page </p>
+<p align="center">
+  <img src="assets/images/screenshots/Points.png" 
+alt="Points Page Screenshot" width="80%" height="70%"/>
+</p>
+
+<p align="center">Highscores Page </p>
+<p align="center">
+  <img src="assets/images/screenshots/Highscores.png" 
+alt="High Score Page Screenshot" width="80%" height="70%"/>
+</p>
 
 #  User Stories
 ### **Player:**
