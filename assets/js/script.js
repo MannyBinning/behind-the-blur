@@ -4,7 +4,8 @@
     var questionAsked = document.querySelector('#question');
     var answerButtons = document.querySelector('#answer');
     var finishGame = document.querySelector('#finish-btn');
-
+		var shuffledQuestions;
+		var currentQuestion;
     // All the question for the quiz including images, answer and hints. 
     var questions = [
         {
@@ -63,66 +64,66 @@
                 {text: 'Margot Robbie', correct: false}
             ]
         },
-    ]
+    ];
 
 
     //eventListner to start the game when page loads
-    window.addEventListener('load', startGame)
+    window.addEventListener('load', startGame);
 
     //eventListner to set the next question
     nextQuestion.addEventListener('click', function(){
-        currentQuestion++
-        setNextQuestion()
-        })
+        currentQuestion++;
+        setNextQuestion();
+        });
     finishGame.addEventListener('click', function(){
-        window.location.assign('points.html')
-    })
+        window.location.assign('points.html');
+    });
     
     //funtion to show the hint for three seconds when hint button clicked found via -  https://www.w3schools.com/howto/howto_js_toggle_hide_show.asp  
     $(document).ready(function () {
     $('#show_hint').click(function () {
         $('#hint').show();
-        setTimeout(function() { $("#hint"). hide(); }, 3000)
+        setTimeout(function() { $("#hint"). hide(); }, 3000);
         });
     });
     
     //function to start the game included with shuffled questions 
     function startGame() {
         shuffledQuestions = questions.sort(function(){ return 0.5 - Math.random();});
-        currentQuestion = 0
-        questionContainer.classList.remove('hide')
+				currentQuestion = 0;
+        questionContainer.classList.remove('hide');
         countRightAnswers = 0; 
-        setNextQuestion()
+        setNextQuestion();
         }
     
     function setNextQuestion() {
-        resetState()
-        showQuestion(shuffledQuestions[currentQuestion])
+        resetState();
+        showQuestion(shuffledQuestions[currentQuestion]);
            
         }
     //function to show the questions/answer/images/hints in the right container
     function showQuestion(question) {
-        questionAsked.innerText = question.question
-        questionAsked.innerHTML += `<img id="main-image" class="main-image" src="${question.image}" width="100%" height="70%" alt="image">`
-        hintAsked.innerText = question.hint
+        questionAsked.innerText = question.question;
+        questionAsked.innerHTML += `<img id="main-image" class="main-image" src="${question.image}" width="100%" height="70%" alt="image">`;
+        hintAsked.innerText = question.hint;
         question.answers.forEach(function(answer) {
-            const button = document.createElement('button')
-            button.innerText = answer.text
-            button.classList.add('btn')
+            const button = document.createElement('button');
+            button.innerText = answer.text;
+            button.classList.add('btn');
             if (answer.correct) {
-                button.dataset.correct = answer.correct
+                button.dataset.correct = answer.correct;
                 }
-            button.addEventListener('click', selectAnswer)
-            answerButtons.appendChild(button)
-            })
-            answerButtons.classList.remove('disable')            
+            button.addEventListener('click', selectAnswer);
+            answerButtons.appendChild(button);
+            });
+            answerButtons.classList.remove('disable');            
         }
     
     function resetState() {
-        clearStatusClass(document.body)
-        nextQuestion.classList.add('hide')
+        clearStatusClass(document.body);
+        nextQuestion.classList.add('hide');
         while (answerButtons.firstChild) {
-            answerButtons.removeChild(answerButtons.firstChild)
+            answerButtons.removeChild(answerButtons.firstChild);
             }
         }
     
@@ -131,23 +132,23 @@
     
     //function to detemrine what happens when the answers are selected 
     function selectAnswer(e) {
-        const selectedButton = e.target
-        const correct = selectedButton.dataset.correct
-        setStatusClass(document.body, correct)
+        const selectedButton = e.target;
+        const correct = selectedButton.dataset.correct;
+        setStatusClass(document.body, correct);
         Array.from(answerButtons.children).forEach(button => {
-            setStatusClass(button, button.dataset.correct)
-            })
+            setStatusClass(button, button.dataset.correct);
+            });
         if (shuffledQuestions.length > currentQuestion + 1) {
-            nextQuestion.classList.remove('hide')
+            nextQuestion.classList.remove('hide');
             
             }   
             else {
-                    finishGame.classList.remove('hide')
+                    finishGame.classList.remove('hide');
                     
                 }
-        if (selectedButton.dataset = correct) {
+       	if (selectedButton.dataset = correct) {
             countRightAnswers++;
-            answerButtons.classList.add('disable')
+            answerButtons.classList.add('disable');
          }
          document.getElementById('rightanswers').innerHTML = (100 * countRightAnswers);
          localStorage.setItem('finalScore', JSON.stringify(100 * countRightAnswers));
@@ -155,19 +156,19 @@
         }
     // function to take the blur off the image when answer selected and to show if the answer selected was right or wrong
     function setStatusClass(chosen, correct) {
-        clearStatusClass(chosen)
+        clearStatusClass(chosen);
         var element = document.getElementById("main-image");
         element.classList.remove("main-image");
         if (correct) {
-            chosen.classList.add('correct')
+            chosen.classList.add('correct');
             }
             else {
-                chosen.classList.add('wrong')
+                chosen.classList.add('wrong');
                 }
         }
     //when the new question shown the answer buttons gone back to original
     function clearStatusClass(chosen) {
-        chosen.classList.remove('correct')
-        chosen.classList.remove('wrong')
+        chosen.classList.remove('correct');
+        chosen.classList.remove('wrong');
         }
     

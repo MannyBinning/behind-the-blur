@@ -114,8 +114,9 @@ The site has been deployed to github and is accessible on github-pages:
   <img src="assets/images/Deployment.jpg" 
 alt="Deployment" width="80%" height="70%"/>
 </p>
+
 # Code Validation
-- - All my code has been validated through [W3C Markup Validation Service](https://validator.w3.org/) and the [CSS Validation Service.](https://jigsaw.w3.org/css-validator/)
+- All my code has been validated through [W3C Markup Validation Service](https://validator.w3.org/) and the [CSS Validation Service.](https://jigsaw.w3.org/css-validator/)
 When the code was tested there were 2 errors given. First error was to warn me for having a link inside a button which was fixed and link function was then added using javascript to lead onto the path required. 
 Second error was a type error in CSS file which was also fixed accordingly. 
 Results for the valdiation are as follow: 
@@ -215,6 +216,8 @@ I have used several useful resources in order to make this website, such as:
 - [TinyPNG](https://tinypng.com/) was used to compress the images without making any changes to the size. 
 
 - [GTmetrix](https://gtmetrix.com/) was used to test the speed of the website. 
+
+- [JSHint](https://jshint.com/) was used to test all the javascript files. 
 
 # Acknowledgement
  
