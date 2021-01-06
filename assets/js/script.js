@@ -1,9 +1,9 @@
-    const nextQuestion = document.querySelector('#next-btn')
-    const hintAsked = document.querySelector ('#hint')
-    const questionContainer = document.querySelector('#question-container')
-    const questionAsked = document.querySelector('#question')
-    const answerButtons = document.querySelector('#answer')
-    const finishGame = document.querySelector('#finish-btn')
+    var nextQuestion = document.querySelector('#next-btn');
+    var hintAsked = document.querySelector ('#hint');
+    var questionContainer = document.querySelector('#question-container');
+    var questionAsked = document.querySelector('#question');
+    var answerButtons = document.querySelector('#answer');
+    var finishGame = document.querySelector('#finish-btn');
 
     // All the question for the quiz including images, answer and hints. 
     var questions = [
@@ -88,7 +88,7 @@
     
     //function to start the game included with shuffled questions 
     function startGame() {
-        shuffledQuestions = questions.sort(() => Math.random() - .5)
+        shuffledQuestions = questions.sort(function(){ return 0.5 - Math.random();});
         currentQuestion = 0
         questionContainer.classList.remove('hide')
         countRightAnswers = 0; 
@@ -105,7 +105,7 @@
         questionAsked.innerText = question.question
         questionAsked.innerHTML += `<img id="main-image" class="main-image" src="${question.image}" width="100%" height="70%" alt="image">`
         hintAsked.innerText = question.hint
-        question.answers.forEach(answer => {
+        question.answers.forEach(function(answer) {
             const button = document.createElement('button')
             button.innerText = answer.text
             button.classList.add('btn')
