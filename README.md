@@ -42,7 +42,7 @@ alt="High Score Page Wireframe" width="80%" height="70%"/>
 </p>
 
 #  Visual Identity
-- To begin the designing process, I created a distinct wireframe. This was later used as guidance when constructing the characteristics of the site. As the layout developed, I formatted the brand logo using a webpage called ‘BrandCrowd’. Keeping the nature of the game as a priority, the name of the game was chosen as ‘Behind the Blur’. 
+To begin the designing process, I created a distinct wireframe. This was later used as guidance when constructing the characteristics of the site. As the layout developed, I formatted the brand logo using a webpage called ‘BrandCrowd’. Keeping the nature of the game as a priority, the name of the game was chosen as ‘Behind the Blur’. 
 
 Two key objectives of the game are to keep it simple and intriguing. To enhance these factors, I have chosen the colour theme throughout the game to be a solid dark background with contrasting bright buttons that can be selected to link to other pages of the game. Furthermore, another desirable key element of the game is consistency. To achieve this, I have kept all key features such as the logo, colour theme, and font persistent on all pages of the game.
 
@@ -56,7 +56,7 @@ The High Score page has been produced to enable the user to keep track of all po
 
 
 # Site Overview
-Following Images are screenshots of the site overvire from a desktop: 
+Following Images are screenshots of the site overview from a desktop: 
 <p align="center">Home Page </p>
 <p align="center">
   <img src="assets/images/screenshots/Home.png" 
@@ -179,7 +179,29 @@ To improve the quiz multiple functions will be added in the near future.
 
 
 # Technologies
+I have used several useful resources in order to make this website, such as:
 
+- [HTML5](https://en.wikipedia.org/wiki/HTML5) was used for the code for content of this website.
+
+- [CSS3](https://en.wikipedia.org/wiki/CSS) was used to style the content of this website. 
+
+- [Bootstrap4](https://getbootstrap.com/) was used to add navigation menu on quiz page and also to organise the content in a grid format. 
+
+- [Balsamiq](https://balsamiq.com/)was used to create the wireframes to initiate the design for this website. 
+
+- [BrandCrowd](https://www.brandcrowd.com/)  was used to make the Logo for the website.
+
+- [Google Font](https://fonts.google.com/)  was used all through the website for font.
+
+- [Font Awesome](https://fontawesome.com/) was used for the icons used for the website. 
+
+- [TinyPNG](https://tinypng.com/) was used to compress the images without making any changed to the size. 
+
+- [GTmetrix](https://gtmetrix.com/) was used to test the speed of the website. 
 
 # Acknowledgement
  
+I would like to thank code institute, for all the help and support provided through the modules. 
+Felipe, my mentor, has once again been a great help for providing me with an idea of this project and for rescuing me from any unwanted situation. 
+I would like to thank Tim from tutor support, who helped me resolve the issues I had. 
+Also, technologies I have used, such as [w3School](https://www.w3schools.com/) and [Slack](https://slack.com/intl/en-gb/) to help me achieve the final version of this site.
