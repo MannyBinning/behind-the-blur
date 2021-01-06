@@ -109,7 +109,11 @@ alt="High Score Page Screenshot" width="80%" height="70%"/>
 - For the user to keep track of their previous scores, I have added High Score page where they scores from every quiz played are saved. 
 
 # Deployment
-
+The site has been deployed to github and is accessible on github-pages:
+<p align="center">
+  <img src="assets/images/Deployment.jpg" 
+alt="Deployment" width="80%" height="70%"/>
+</p>
 # Code Validation
 - - All my code has been validated through [W3C Markup Validation Service](https://validator.w3.org/) and the [CSS Validation Service.](https://jigsaw.w3.org/css-validator/)
 When the code was tested there were 2 errors given. First error was to warn me for having a link inside a button which was fixed and link function was then added using javascript to lead onto the path required. 
@@ -119,34 +123,47 @@ Results for the valdiation are as follow:
 <p align="center">Home Page </p>
 <p align="center">
   <img src="assets/images/validation/HomePageValidation.png" 
-alt="High Score Page Screenshot" width="80%" height="70%"/>
+alt="Home Page Validation" width="80%" height="70%"/>
 </p>
 
 <p align="center">Quiz Page </p>
 <p align="center">
   <img src="assets/images/validation/QuizPageValidation.png" 
-alt="High Score Page Screenshot" width="80%" height="70%"/>
+alt="Quiz Page Validation" width="80%" height="70%"/>
 </p>
 
 <p align="center">Points Page </p>
 <p align="center">
   <img src="assets/images/validation/PointsPageValidation.png" 
-alt="High Score Page Screenshot" width="80%" height="70%"/>
+alt="Points Page Validation" width="80%" height="70%"/>
 </p>
 
 <p align="center">Highscore Page </p>
 <p align="center">
   <img src="assets/images/validation/HighscorePageValidation.png" 
-alt="High Score Page Screenshot" width="80%" height="70%"/>
+alt="High Score Page Validation" width="80%" height="70%"/>
 </p>
 
 <p align="center">CSS Validation </p>
 <p align="center">
   <img src="assets/images/validation/cssValidation.png" 
-alt="High Score Page Screenshot" width="80%" height="70%"/>
+alt="CSS Validation" width="80%" height="70%"/>
 </p>
 
 # Testing
+ 
+<p align="center"> I used TinyPNG to compress the images without making any changes to the size.</p>
+<p align="center">
+  <img src="assets/images/Tiny.jpg" 
+alt="TinyPNG" width="80%" height="70%"/>
+</p>
+
+<p align="center">To test the website, I used GTmetrix. The results are as follow:</p>
+<p align="center">
+  <img src="assets/images/gtmetrix.jpg" 
+alt="GTmetrix" width="80%" height="70%"/>
+</p>
+
 ### Testing Steps(s):
 Following steps demonstrate how all the functions in the quiz work. Also, how language pairing has been used to create this quiz:
 
@@ -195,7 +212,7 @@ I have used several useful resources in order to make this website, such as:
 
 - [Font Awesome](https://fontawesome.com/) was used for the icons used for the website. 
 
-- [TinyPNG](https://tinypng.com/) was used to compress the images without making any changed to the size. 
+- [TinyPNG](https://tinypng.com/) was used to compress the images without making any changes to the size. 
 
 - [GTmetrix](https://gtmetrix.com/) was used to test the speed of the website. 
 
