@@ -1,7 +1,13 @@
 var endScore = document.querySelector('#points-scored');
 var player = document.querySelector('#player');
 var pointsScored = JSON.parse(localStorage.getItem('pointsScored')) || [];
-var date = new Date();
+
+// code found using https://tecadmin.net/
+var today = new Date();
+var date = today.getDate()+'-'+(today.getMonth()+1)+'-'+today.getFullYear();
+var time = today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();
+var dateTime = date+' '+time;
+
 
 // Final points scored in the quiz to appear on the points page 
 endScore.innerHTML = localStorage.getItem('finalScore');
@@ -17,13 +23,13 @@ function savePointsScored(e) {
             alert("You must fill a name.");
             return false;
         }
-    window.localStorage.setItem("date", date);
+    window.localStorage.setItem("dateTime", dateTime);
 
 //code used with the help of Brian Design - Tutorials. 
     const points = {
         points: localStorage.getItem('finalScore'),
         name: player.value,
-        date: localStorage.getItem('date')
+        date: localStorage.getItem('dateTime')
     };
 
     pointsScored.push(points);
