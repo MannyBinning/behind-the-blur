@@ -26,7 +26,7 @@ function savePointsScored(e) {
     window.localStorage.setItem("dateTime", dateTime);
 
 //code used with the help of Brian Design - Tutorials. 
-    const points = {
+    var points = {
         points: localStorage.getItem('finalScore'),
         name: player.value,
         date: localStorage.getItem('dateTime')

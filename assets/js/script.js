@@ -2,7 +2,7 @@
     var hintAsked = document.querySelector ('#hint');
     var questionContainer = document.querySelector('#question-container');
     var questionAsked = document.querySelector('#question');
-    var imageAsked = document.querySelector('#images')
+    var imageAsked = document.querySelector('#images');
     var answerButtons = document.querySelector('#answer');
     var finishGame = document.querySelector('#finish-btn');
 		var shuffledQuestions;
