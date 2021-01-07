@@ -83,7 +83,7 @@ alt="Points Page Screenshot" width="80%" height="70%"/>
 
 <p align="center">Highscores Page </p>
 <p align="center">
-  <img src="assets/images/screenshots/Highscores.png" 
+  <img src="assets/images/screenshots/HighscorePage.jpg" 
 alt="High Score Page Screenshot" width="80%" height="70%"/>
 </p>
 
@@ -135,6 +135,10 @@ alt="Deployment" width="50%" height="50%"/>
 </p>
 
 <p align="center"> For the user to keep track of their previous scores, I have added High Score page where they scores from every quiz played are saved. </p>
+<p align="center">
+  <img src="assets/images/userstories/HighscorePage.jpg" 
+alt="Deployment" width="50%" height="50%"/>
+</p>
 
 # Deployment
 The site has been deployed to github and is accessible on github-pages:
