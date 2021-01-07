@@ -84,6 +84,10 @@ h1, h3 {
     padding: 10px;
     text-align: center; 
 }
+#answer {
+    margin-left: 30px;
+    margin-right: 30px;
+}
 
 /*hint container*/
 #hint-container {

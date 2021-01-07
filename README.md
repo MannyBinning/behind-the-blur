@@ -213,6 +213,7 @@ Following steps demonstrate how all the functions in the quiz work. Also, how la
 1. Points were included in this site to keep track of the correct answers. However, at one stage points were getting added on multiples clicks on the same answer.
 This bug was fixed by adding a 'disable' class, which is activated once an answer is selected, preventing user's points going up on every click.
 
+2. Image's appearance on smaller devices was smaller than needed and looked like thumbnails; This was fixed using bootstrap and creating a grid for question and image separately. 
 
 ### Scalability:
 To improve the quiz multiple functions will be added in the near future. 
@@ -222,6 +223,8 @@ To improve the quiz multiple functions will be added in the near future.
 2. Deducted points when hint used or incorrect answer selected. 
 
 3. Decreasing the level of blur (will cost points) to make the image clearer for hint purposes.
+
+4. Shuffled answers will be added in order to stop users from knowing the position of correct answer. 
 
 
 # Technologies
