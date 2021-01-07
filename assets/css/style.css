@@ -66,11 +66,7 @@ h1, h3 {
 .main-image{
     filter: blur(30px);
 }
-#main-image {
-    padding: 50px;
-    margin-top: -45px;
-    margin-bottom: -25px;
-}
+
 /*buttons for answers in the quiz*/
 #options {
     display: grid;

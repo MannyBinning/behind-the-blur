@@ -2,6 +2,7 @@
     var hintAsked = document.querySelector ('#hint');
     var questionContainer = document.querySelector('#question-container');
     var questionAsked = document.querySelector('#question');
+    var imageAsked = document.querySelector('#images')
     var answerButtons = document.querySelector('#answer');
     var finishGame = document.querySelector('#finish-btn');
 		var shuffledQuestions;
@@ -104,7 +105,7 @@
     //function to show the questions/answer/images/hints in the right container
     function showQuestion(question) {
         questionAsked.innerText = question.question;
-        questionAsked.innerHTML += `<img id="main-image" class="main-image" src="${question.image}" width="100%" height="70%" alt="image">`;
+        imageAsked.innerHTML = `<img id="main-image" class="main-image" src="${question.image}" width="70%" height="90%" alt="image">`;
         hintAsked.innerText = question.hint;
         question.answers.forEach(function(answer) {
             const button = document.createElement('button');

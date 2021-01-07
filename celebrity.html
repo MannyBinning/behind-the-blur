@@ -39,11 +39,16 @@
     </header>
     <section>
     <!--Container made to hold the content of the site-->
-        <div class="container">
-            <div id="question-container">
-    <!--Main Question div holding the question and the image-->
-                <div id="question">Question</div>
-    <!--buttons to select answers-->
+        <div class="container" >
+            
+   <!--Main Question div holding the question and the image-->
+            <div class="row" id="question-container">
+                <div class="col" id="question">Question</div>
+                <div class="w-100"></div>
+                <div class="col" id="images"></div>
+            </div>
+
+                <!--buttons to select answers-->
                 <div id="answer" class="btn-grid">
                     <button class="btn">Option 1</button>
                     <button class="btn">Option 2</button>
@@ -68,7 +73,7 @@
                     <p>Points</p>
                 </div>
             </div>
-      </div>            
+                  
     </section>
     <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>

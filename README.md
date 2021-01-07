@@ -247,7 +247,7 @@ I have used several useful resources in order to make this website, such as:
 
 - [JSHint](https://jshint.com/) was used to test all the javascript files. 
 
-- [Brian Design](https://twitter.com/briandesignz?lang=en) and his tutorials have used to help achieve goals where needed.  
+- [Brian Design's](https://twitter.com/briandesignz?lang=en) tutorials have been used to help achieve goals where needed.  
 
 # Acknowledgement
  
