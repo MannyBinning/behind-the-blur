@@ -83,7 +83,7 @@ alt="High Score Page Screenshot" width="80%" height="70%"/>
 
 #  User Stories
 ### **Player:**
-- As a user, I would like the game to be created in a simplistic format. There should be no complications when finding my way to the quiz page. 
+- As a user, I would like to play a game, created in a simplistic format. There should be no complications when finding my way to the quiz page. 
 
 - As a user, I would like there to be knowledgeable questions about contrasting personalities and organistions within the quiz.
 
@@ -96,17 +96,39 @@ alt="High Score Page Screenshot" width="80%" height="70%"/>
 - As a user, I would like the game to track my overall score after every quiz to signify my success.
 
 ### **Actions taken to accomplish these goals are:**
-- For the user to find the way around the quiz, this project has been kept as simple as possible with clear instructions. 
+<p align="center"> For the user to find the way around the quiz, this project has been kept as simple as possible with clear instructions. </p>
+<p align="center">
+  <img src="assets/images/userstories/Instructions.jpg" 
+alt="Deployment" width="50%" height="50%"/>
+</p>
 
-- For the user to test their knowledge, various questions from different fields have been added. 
+<p align="center"> For the user to test their knowledge, various questions with blurred images from different fields have been added. </p>
+<p align="center">
+  <img src="assets/images/userstories/Question.jpg" 
+alt="Deployment" width="50%" height="50%"/>
+<img src="assets/images/userstories/Question2.jpg" 
+alt="Deployment" width="50%" height="50%"/>
+</p>
 
-- For the user, correct answer is shown once the user has selected their answer.
+<p align="center"> For the user, correct answer is shown once the user has selected their answer. </p>
+<p align="center">
+  <img src="assets/images/userstories/Answers.jpg" 
+alt="Deployment" width="50%" height="50%"/>
+</p>
 
-- To help the user where stuck, I have added hints button giving information about that particular personality or organisation. 
+<p align="center"> To help the user where stuck, I have added hints button giving information about that particular personality or organisation. </p>
+<p align="center">
+  <img src="assets/images/userstories/Hint.jpg" 
+alt="Deployment" width="50%" height="50%"/>
+</p>
 
-- For the user to keep track of their correct answers, points section has been added; which is updated after every correct selection made. 
+<p align="center"> For the user to keep track of their correct answers, points section has been added; which is updated after every correct selection made. </p>
+<p align="center">
+  <img src="assets/images/userstories/Points.jpg" 
+alt="Deployment" width="50%" height="50%"/>
+</p>
 
-- For the user to keep track of their previous scores, I have added High Score page where they scores from every quiz played are saved. 
+<p align="center"> For the user to keep track of their previous scores, I have added High Score page where they scores from every quiz played are saved. </p>
 
 # Deployment
 The site has been deployed to github and is accessible on github-pages:
@@ -172,7 +194,7 @@ Following steps demonstrate how all the functions in the quiz work. Also, how la
 
 2. In the beginning, there is a question followed by a blurred image and a choice of answers, a hint button and points scored. 
 
-3. If a user is unaware of the answer, the Hint button has been created which, on clicking, toggles down a clue for a set amount of time, related to the given question.
+3. If a user is unaware of the answer, the Hint button has been created which, on clicking, toggles down a clue for 3 seconds, related to the given question.
 
 4. Once an answer is selected, CSS classes pair up with JavaScript, where the buttons will change colour, depending on correct and incorrect value. 
 
@@ -185,6 +207,12 @@ Following steps demonstrate how all the functions in the quiz work. Also, how la
 8. LocalStorage has been used in order to display the points on Points page. 
 
 9. Save button is provided for the user to save the points in local storage which is called in a list on Highscores page. 
+
+### Bug(s) and Resolution(s): 
+
+1. Points were included in this site to keep track of the correct answers. However, at one stage points were getting added on multiples clicks on the same answer.
+This bug was fixed by adding a 'disable' class, which is activated once an answer is selected, preventing user's points going up on every click.
+
 
 ### Scalability:
 To improve the quiz multiple functions will be added in the near future. 
@@ -218,6 +246,8 @@ I have used several useful resources in order to make this website, such as:
 - [GTmetrix](https://gtmetrix.com/) was used to test the speed of the website. 
 
 - [JSHint](https://jshint.com/) was used to test all the javascript files. 
+
+- [Brian Design](https://twitter.com/briandesignz?lang=en) and his tutorials have used to help achieve goals where needed.  
 
 # Acknowledgement
  

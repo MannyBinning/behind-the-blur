@@ -19,6 +19,7 @@ function savePointsScored(e) {
         }
     window.localStorage.setItem("date", date);
 
+//code used with the help of Brian Design - Tutorials. 
     const points = {
         points: localStorage.getItem('finalScore'),
         name: player.value,
@@ -31,12 +32,12 @@ function savePointsScored(e) {
         return name.points - points.points;
     });
 
-    pointsScored.splice(5);
+//limiting the names displayed on the highscores list to 5 
+    pointsScored.splice(10);
 
     localStorage.setItem('pointsScored', JSON.stringify(pointsScored));
 
     //heading to highscore page once score saved 
     window.location.assign('highscores.html');
-
     
 }
