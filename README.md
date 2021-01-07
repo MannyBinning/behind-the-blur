@@ -9,7 +9,13 @@ alt="Logo"/>
    The main objective of the game is to ensure all users gain contrasting knowledge in an enjoyable manner. To ensure all users are aware of the correct answer, I have included functions that specifically highlights the true answer when answered false. To enhance the quiz entertainment objective, I combined pixilated images throughout the game to engage the user and fixate their attention.
 
 # UX
-- The game has been named 'Behind the blur' due to the nature of the game. This design has been kept very simple yet color contrasting in a subtle manor, so it is easier for the user to find the way around the site.
+<p align="center"> Responsive Screenshot</p>
+<p align="center">
+  <img src="assets/images/Responsive.jpg" 
+alt="Responsive" width="80%" height="70%"/>
+</p>
+
+The game has been named 'Behind the blur' due to the nature of the game. This design has been kept very simple yet color contrasting in a subtle manor, so it is easier for the user to find the way around the site.
 Style of this site has been kept the same throughout every page of the game to keep the consistency, i.e background image, font style and buttons used. 
 ### **Home Page:**
 - The home page has been created in a simplified format. To make the page more apparent, I selected a dark background with lighter lettering. This page contains two definitive links :
