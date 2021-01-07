@@ -5,7 +5,7 @@ alt="Logo"/>
 
 
 # Description 
-- ‘Behind the blur’ is a virtual game, designed to quiz users on their awareness of vast general knowledge across the world. The questions within the game are related to well-known celebrities and established organisations within distinct sectors. <br>
+- [‘Behind the blur’](https://mannybinning.github.io/behind-the-blur/) is a virtual game, designed to quiz users on their awareness of vast general knowledge across the world. The questions within the game are related to well-known celebrities and established organisations within distinct sectors. <br>
    The main objective of the game is to ensure all users gain contrasting knowledge in an enjoyable manner. To ensure all users are aware of the correct answer, I have included functions that specifically highlights the true answer when answered false. To enhance the quiz entertainment objective, I combined pixilated images throughout the game to engage the user and fixate their attention.
 
 # UX
@@ -142,7 +142,7 @@ alt="Deployment" width="50%" height="50%"/>
 
 
 # Deployment
-The site has been deployed to github and is accessible on github-pages:
+The site has been deployed to github and is accessible on [github-pages](https://mannybinning.github.io/behind-the-blur/):
 <p align="center">
   <img src="assets/images/Deployment.jpg" 
 alt="Deployment" width="80%" height="70%"/>
