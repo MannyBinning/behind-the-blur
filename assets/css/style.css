@@ -95,11 +95,6 @@ h1, h3 {
     margin-bottom: 20px;
     }
    
-#hint {
-    margin-top: 20px;
-    margin-bottom: 20px;
-}
-
 /*Score Container for the points when right answer selected*/
 .score-container {
     display: flex;
@@ -176,6 +171,4 @@ input::placeholder {
 .players {
     font-size: larger;
     list-style: none;
-
 }
-
