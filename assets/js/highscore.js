@@ -3,7 +3,7 @@ var pointsScored = JSON.parse(localStorage.getItem("pointsScored")) || [];
 
 // To retreive data and return a list.
 var savedList = pointsScored.map( function(points){
-    return `<li>${points.name} __ ${points.points} __ ${points.date} </li>`;
+    return `<li>Player: ${points.name} -- Points: ${points.points} -- Time: ${points.date} </li>`;
 }).join("");
 
 
